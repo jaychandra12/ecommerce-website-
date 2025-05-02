@@ -1,0 +1,162 @@
+## 🧠 **SneakerLand Full Website Prompt**  
+*(Copy & paste into your AI web builder / Figma AI / Cursor / Replit AI)*
+
+---
+
+### ✅ 🧩 General Instructions
+
+```
+Create a multi-page e-commerce website for a brand called "SneakerLand" — a premium sneaker marketplace and lifestyle brand. The website should reflect an urban, stylish, modern streetwear aesthetic. Design each page to be mobile-responsive, clean, and visually bold.
+
+Use bold fonts like Outfit or Inter, primary colors black and white with accent (e.g. neon red #FF3131), and high-quality sneaker and streetwear lifestyle images.
+
+Include consistent navigation, hover animations, and CTA buttons across all pages.
+```
+
+---
+
+### 🏠 **1. Homepage (/)**  
+```
+- Hero section with tagline: “Own the Street. Rock the Culture.” and 2 CTA buttons: “Shop Now” and “Explore Drops”
+- Featured Drops grid: 6–8 product cards (image, brand, name, price, stars)
+- Category Preview: Scrollable brand logos (Nike, Adidas, Jordan, New Balance, etc.)
+- Lifestyle section: photo carousel of people wearing sneakers in street settings
+- Brand story: Short paragraph about SneakerLand’s vision & sneaker culture
+- Newsletter signup
+- Footer with links (About, Support, Legal, Socials)
+```
+
+---
+
+### 👟 **2. Shop Page (/shop)**  
+```
+A full catalog page of all sneakers. Include:
+
+- Filter sidebar:
+  - Brand (checkbox: Nike, Adidas, Jordan, etc.)
+  - Size (US 6–13)
+  - Price Range slider
+  - Color
+  - Sort dropdown (Price Low–High, Newest, Popular)
+
+- Product grid (cards):
+  - Image, name, brand, price, rating, “View Details” button
+  - Hover effect: zoom image, “Add to Cart” button appears
+
+Pagination or infinite scroll for product list.
+```
+
+---
+
+### 📄 **3. Product Details Page (/product/[id])**  
+```
+Dynamic page template for individual sneakers.
+
+- Large product image gallery
+- Title, Brand, Price, Ratings
+- Size selector (dropdown or buttons)
+- Add to Cart button
+- Description tab
+- Reviews tab (dummy data)
+- “You might also like” recommendations section at bottom
+```
+
+---
+
+### 🗓️ **4. Drops Page (/drops)**  
+```
+This page showcases upcoming sneaker drops or limited editions.
+
+- Upcoming drops in a vertical list with countdown timers
+- Past drops section (greyed out or labeled “Sold Out”)
+- Filters: Brand, Release Date
+- CTA: “Get Notified” (opens email modal)
+```
+
+---
+
+### 📷 **5. Lifestyle Page (/lifestyle)**  
+```
+Editorial-style layout for sneaker lifestyle content
+
+- Lookbooks or lifestyle photos in a grid or gallery
+- Each opens into a story page with large visuals
+- Optional blog posts, sneaker styling tips
+- Instagram-style image feed embedded or replicated
+```
+
+---
+
+### 🛒 **6. Cart Page (/cart)**  
+```
+- List of added products
+- Quantity selector, Remove button
+- Subtotal, estimated shipping, total
+- “Checkout” button (non-functional for now)
+```
+
+---
+
+### 👤 **7. Login & Register (/login, /register)**  
+```
+Simple auth UI
+
+- Login: email, password, remember me
+- Register: name, email, password, confirm password
+- Social login buttons (Google, Twitter) placeholders
+```
+
+---
+
+### 📦 **8. 404 Not Found Page (/404)**  
+```
+Stylish “404: Lost your kicks?” message
+- CTA: “Return to Homepage”
+- Sneaker image or animation
+```
+
+---
+
+## 🌐 Navbar (Shown on All Pages)
+
+```
+Top navbar with:
+- Logo left (“SneakerLand” in bold)
+- Links: Home, Shop, Drops, Lifestyle
+- Icons: Search, Cart, User/Profile
+- Sticky on scroll, mobile hamburger version
+```
+
+---
+
+## 🎨 Design Language Summary
+
+```
+- Fonts: Outfit or Inter (bold headers, clean body)
+- Colors: Black, white, accent red (#FF3131)
+- Style: Urban, premium, youth-focused, minimal
+- Animations: Page transitions, hover states, subtle slide/fade-in
+- Components: Card, badge, button, navbar, footer, modal, product grid
+```
+
+---
+
+## 🛠 Optional Add-ons (Future)
+
+```
+- Wishlist button
+- Product zoom on hover
+- Newsletter pop-up modal
+- Back to top floating button
+- Mobile menu animation
+```
+
+---
+
+### 🔄 Dynamic Routing & CMS-ready Structure
+
+Use dynamic routes for:
+- `/product/[id]`
+- `/lifestyle/[slug]`
+- Future admin backend: `/admin/products`, `/admin/orders`
+- Inventory can later be fetched from MongoDB, Firebase, or mock JSON
